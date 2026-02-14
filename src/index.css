@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Fundo Futurista com Grade Sutil */
+body {
+  background-color: #020617; /* Slate 950 - Quase preto */
+  background-image: 
+    linear-gradient(rgba(6, 182, 212, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(6, 182, 212, 0.05) 1px, transparent 1px);
+  background-size: 30px 30px; /* Tamanho dos quadradinhos da grade */
+  font-family: 'Inter', sans-serif; /* Uma fonte limpa e moderna */
+}
+
+/* Efeito de "Scanline" sutil na tela */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(0, 0, 0, 0.3) 50%,
+    transparent 100%
+  );
+  background-size: 100% 4px;
+  pointer-events: none; /* Não interfere no clique */
+  z-index: 9999;
+  opacity: 0.2;
+}
+
+/* Barra de rolagem estilo Cyberpunk */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #020617;
+}
+::-webkit-scrollbar-thumb {
+  background: #0891b2; /* Ciano escuro */
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #22d3ee; /* Ciano brilhante */
+}
+
+/* Utilitário para textos que parecem código */
+.font-mono-code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
