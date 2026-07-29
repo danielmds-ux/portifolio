@@ -3,6 +3,33 @@ import { Github, Linkedin, ExternalLink, Code, Smartphone, Zap, ChevronRight, Te
 
 const projects = [
   {
+    title: "Lifebox Gestão Fitness",
+    category: "WEB APP & ERP",
+    description: "Plataforma completa para gestão de box de crosstraining. Conta com painel administrativo (CRM, controle de alunos, renovação de planos, fluxo de caixa) e um portal interativo para check-ins.",
+    tech: ["React", "Tailwind CSS", "Supabase", "Vite"],
+    video: "/PageLifebox.mp4", 
+    link: "https://ctlifebox.com.br",
+    featured: true
+  },
+  {
+    title: "Marina Clube App",
+    category: "WEB APP & ADMIN PANEL",
+    description: "Plataforma completa para gestão inteligente de condomínios residenciais. Possui portal do morador com reservas de áreas comuns e integração de pagamentos via Asaas (Pix Automático), além de um painel administrativo com controle de acessos RLS e métricas financeiras em tempo real.",
+    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Supabase", "Asaas API"],
+    video: "/MarinaClube.mp4",
+    featured: true
+  },
+  {
+    title: "Mini Games Cross Kids",
+    category: "WEB APP & EVENT MANAGEMENT",
+    description: "Plataforma ponta a ponta para gestão de competição esportiva. Conta com automação de inscrições baseada em categorias de idade, área logada do atleta, gateway de pagamentos (Asaas) transparente e painel de arena para resultados em tempo real.",
+    tech: ["Next.js", "Supabase", "Tailwind CSS", "Asaas API"],
+    video: "/PageMiniGames.mp4", 
+    imagePlaceholder: "print_minigames.jpg",
+    link: "https://www.minigamesofc.com.br/",
+    featured: true
+  },
+  {
     title: "Lilow Automação IA",
     category: "BOT & WEB APP",
     description: "Ecossistema de agendamento inteligente via WhatsApp usando API Gemini. Interface de gestão de pacientes e portal do cliente integrados.",
@@ -14,16 +41,6 @@ const projects = [
     featured: true
   },
   {
-    title: "Dashboard Construtora",
-    category: "SISTEMA DE GESTÃO",
-    description: "Painel de controle financeiro high-end. Gestão de orçamentos de obra complexos e fluxo de caixa em tempo real com dados visuais.",
-    tech: ["React", "Tailwind", "Supabase/Firebase"],
-    // Sem vídeo por enquanto
-    video: "/PageAbrahao.mp4",
-    imagePlaceholder: "print_dashboard.jpg",
-    link: "#" 
-  },
-  {
     title: "Wedding Experience",
     category: "EVENTO INTERATIVO",
     description: "Plataforma digital responsiva para casamentos. RSVP dinâmico, lista de presentes integrada e galeria de fotos em tempo real.",
@@ -32,6 +49,16 @@ const projects = [
     video: "/PageCasamento.mp4",
     imagePlaceholder: "print_casamento.jpg",
     link: "https://casamentodb.vercel.app/" 
+  },
+  {
+    title: "Dashboard Construtora",
+    category: "SISTEMA DE GESTÃO",
+    description: "Painel de controle financeiro high-end. Gestão de orçamentos de obra complexos e fluxo de caixa em tempo real com dados visuais.",
+    tech: ["React", "Tailwind", "Supabase/Firebase"],
+    // Sem vídeo por enquanto
+    video: "/PageAbrahao.mp4",
+    imagePlaceholder: "print_dashboard.jpg",
+    link: "#" 
   }
 ];
 
