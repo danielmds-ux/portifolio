@@ -1,5 +1,5 @@
 import React from 'react';
-import { Github, Linkedin, ExternalLink, Code, Smartphone, Zap, ChevronRight, Terminal, Cpu, Globe } from 'lucide-react';
+import { Instagram, ExternalLink, Code, Smartphone, Zap, ChevronRight, Terminal, Cpu, Globe } from 'lucide-react';
 
 const projects = [
   {
@@ -261,8 +261,7 @@ function App() {
           </p>
           
           <div className="flex justify-center gap-6 mb-8">
-              <a href="#" className="text-slate-400 hover:text-cyan-400 transition-colors hover:scale-110 transform"><Github size={20}/></a>
-              <a href="#" className="text-slate-400 hover:text-cyan-400 transition-colors hover:scale-110 transform"><Linkedin size={20}/></a>
+              <a href="https://instagram.com/daniielmds_" target="_blank" rel="noreferrer" className="text-slate-400 hover:text-cyan-400 transition-colors hover:scale-110 transform"><Instagram size={20}/></a>
           </div>
 
           <div className="text-xs font-mono-code opacity-50">
